@@ -12,7 +12,7 @@ app.use(express.static('static'));
 app.use(helmet());
 
 app.get('/', (req, res) => {
-  res.sendFile(indexPath);
+  res.sendFile('index.html');
 });
 
 app.get('/health-check', (req, res) => {
