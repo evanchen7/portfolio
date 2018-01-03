@@ -5,12 +5,10 @@ import helmet from 'helmet';
 // import router from './router';
 
 const app = express();
-
-const publicPath = express.static(path.join(__dirname, '../'));
-const indexPath = express.static(path.join(__dirname, '../index.html'));
+const indexPath = express.static(path.join(__dirname, '../../static/index.html'));
 
 // Middleware
-app.use(publicPath);
+app.use(express.static('static'));
 app.use(helmet());
 
 app.get('/', (req, res) => {
