@@ -10,7 +10,7 @@ const publicPath = express.static(path.join(__dirname, '../'));
 const static1 = express.static('static');
 
 // Middleware
-app.use(helmet());
+ app.use(helmet());
 app.use(publicPath);
 app.use(static1);
 
