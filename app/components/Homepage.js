@@ -111,18 +111,13 @@ export default class Homepage extends Component {
                 </p>
               </Grid.Column>
               <Grid.Column floated='right' width={8} stretched={true}>
-                <Embed
-                  active={true}
-                  autoplay={true}
-                  iframe={{
-                    align:"center",
-                    frameBorder:"0",
-                    width:"500",
-                    height:"500",
-                    src:'http://flickrslidr.com/slideshow/view.php?g=TrJeek'
-                  }}
-                  />
-
+                <Image
+                  src='img/example.png'
+                  as='a'
+                  href='https://www.flickr.com/photos/raviolisauce/albums/72157664318711368'
+                  target='_blank'
+                  fluid
+                />
 
               </Grid.Column>
             </Grid.Row>
